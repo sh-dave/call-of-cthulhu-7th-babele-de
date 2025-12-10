@@ -84,6 +84,14 @@
 "CoC7.All": "Alle",
 "CoC7.Success": "Erfolg",
 "CoC7.CustomLabel": "Benutzerdefiniertes Label",
+"CoC7.SpecificLocations": "Spezifizierte Zonen",
+"CoC7.ArmourPlating": "Panzerungszonen",
+"CoC7.Location": "Zone",
+"CoC7.Properties": "Eigenschaften",
+"CoC7.Attributes": "Attribute",
+"CoC7.Collapse": "Einklappen",
+"CoC7.Expand": "Ausklappen",
+
 "CoC7.RegularSuccess": "Regulärer Erfolg",
 "CoC7.HardSuccess": "Schwieriger Erfolg",
 "CoC7.ExtremeSuccess": "Extremer Erfolg",
@@ -91,7 +99,7 @@
 "CoC7.Fumble": "Patzer",
 "CoC7.Failure": "Misserfolg",
 "CoC7.Malfunction": "{itemName} hatte eine Fehlfunktion",
-
+			
 "CoC7.Dice": "Würfel",
 "CoC7.DiceModifierBonus": "Bonus",
 "CoC7.DiceModifierPenalty": "Straf",
@@ -120,7 +128,6 @@
 "CoC7.RollSecretDice": "Der Spielleiter hat privat gewürfelt",
 "CoC7.KeeperSentDecoy": "Vorgetäuschte Probe an Spieler gesendet",
 "CoC7.FakeRoll": "Eine vorgetäuschte Probe an die Spieler schicken",
-
 "CoC7.ConstitutionCheck": "Konstitutionsprobe",
 "CoC7.BonusSelectionWindow": "Bonus-Auswahlfenster",
 "CoC7.BonusSelectionWindowNamed": "Wähle Modifikator für {name}-Probe",
@@ -280,14 +287,12 @@
 "CoC7.Weapon.Property.Shotgun": "Schrotflinte",
 
 "CoC7.ErrorItem": "Gegenstand kann nicht gefunden werden",
-"CoC7.ErrorActor": "Figur kann nicht gefunden werden",
+"CoC7.ErrorActor": "Akteur kann nicht gefunden werden",
 "CoC7.ErrorInvalidFormula": "{value} ist keine gültige Formel",
 "CoC7.ErrorInvalid": "ungültig",
 "CoC7.Validate": "Bestätigen",
 "CoC7.Apply": "Anwenden",
-
 "CoC7.NewBioSectionName": "Neuer Bereich",
-
 "CoC7.DodgeSkillName": "Ausweichen",
 "CoC7.CthulhuMythosName": "Cthulhu-Mythos",
 "CoC7.CreditRatingSkillName": "Finanzkraft",
@@ -442,9 +447,9 @@
 "CoC7.OccultBook": "Okkulter Foliant",
 "CoC7.Unidentified": "Nicht identifiziert",
 
-"CoC7.Crew": "Crew",
+"CoC7.Crew": "Besatzung",
 "CoC7.Origin": "Herkunft",
-"CoC7.Model": "Modell",
+"CoC7.ArmedVehicle": "Bewaffnetes Fahrzeug",
 
 "CoC7.PulpTalents": "Pulp-Talente",
 "CoC7.TalentType": "Talenttyp",
@@ -511,6 +516,7 @@
 "CoC7.PutGunAway": "Waffe ablegen",
 "CoC7.DrawGun": "Waffe ziehen",
 "CoC7.GmTools": "Spielleitungswerkzeuge",
+"CoC7.GmNotes": "SL-Notizen",
 "CoC7.DevPhase": "Entwicklungsphase",
 "CoC7.DevPhaseEnabled": "Entwicklungsphase aktiviert",
 "CoC7.DevPhaseDisabled": "Entwicklungsphase deaktiviert",
@@ -520,11 +526,11 @@
 "CoC7.toggleXP": "EP-Zuwachs",
 "CoC7.XPGainEnabled": "Charakter kann EP erhalten",
 "CoC7.XPGainDisabled": "Charakter kann keine EP erhalten",
-"CoC7.WarnNoActorAvailable": "Du kontrollierst keinen Charakter oder hast keinen ausgewählt",
+"CoC7.WarnNoActorAvailable": "Du kontrollierst keinen Akteur oder hast keinen ausgewählt",
 "CoC7.WarnMacroIncorrectType": "Du kannst Makros nur für Waffen oder Fertigkeiten erstellen.",
 "CoC7.WarnNoGlobalSpec": "Du kannst kein Makro für unspezifierte Spezialisierung erstellen.",
 "CoC7.WarnMacroNoItemFound": "Keinen nutzbaren Gegenstand gefunden",
-"CoC7.WarnNoControlledActor": "Du hast keinen Charakter, den Du kontrollierst.",
+"CoC7.WarnNoControlledActor": "Du hast keinen Akteur, den Du kontrollierst.",
 "CoC7.WarnFastTargetWithWrongMOV": "Schnellauswahl eines Ziels mit weniger als 8 BW. (BW: {mov})",
 "CoC7.WarnTooManyTarget": "Zu viele Ziele ausgewählt. Nur zuletzt ausgewähltes Ziel beibehalten",
 
@@ -533,10 +539,8 @@
 "CoC7.ErrorManeuverNotPossible": "Dein Gegner ist zu stark um ein Manöver auszuführen.",
 "CoC7.ErrorNotFound": "{missing} nicht gefunden!",
 "CoC7.ErrorNotFoundForActor": "{missing} für Figur {actor} nicht gefunden!",
-
 "CoC7.InfoLessSkillThanOptions": "Es gibt nur {skillCount} und {optionsCount} Optionen, füge alle hinzu.",
 "CoC7.InfoAllSkillsAlreadySelected": "Alle Fertigkeiten sind bereits ausgewählt.",
-
 "CoC7.MessageWaitForKeeperToClick": "Dein Spielleiter bittet um eine Probe.<br>Warte bevor du klickst!<br>",
 "CoC7.MessageCheckRequested": "Dein Spielleiter bittet um eine Probe.",
 
@@ -550,15 +554,18 @@
 "CoC7.Convert": "Konvertieren",
 "CoC7.NoConvert": "Nicht konvertieren",
 "CoC7.Guess": "Schätzung",
-
+"CoC7.English": "Englisch",
+"CoC7.Spanish": "Spanisch",
+"CoC7.French": "Französisch",
+"CoC7.SelectSourceLanguage": "Wähle die Sprache des Textes",
 "SETTINGS.DefaultDifficulty": "Standard-Probenschwierigkeit",
 "SETTINGS.DefaultDifficultyHint": "Du kannst die Standard-Probenschwierigkeit auswählen. Unbekannt wird eine Probe würfeln, ohne das Spieler die Schwierigkeitsstufe kennen.",
 "SETTINGS.CheckDifficultyRegular": "Standardschwierigkeit",
 "SETTINGS.CheckDifficultyUnknown": "Unbekannte Schwierigkeit",
 "SETTINGS.UseToken":  "Benutze Tokenbild",
 "SETTINGS.UseTokenHint": "Benutze Tokenbild anstatt des Portrait auf Chat-Karten",
-"SETTINGS.DisplayActorOnCard":  "Zeige Charakter auf Karte an",
-"SETTINGS.DisplayActorOnCardHint": "Zeige das Bild/Token des Characters auf Kampf-Chat-Karten",
+"SETTINGS.DisplayActorOnCard":  "Zeige Akteur auf Karte an",
+"SETTINGS.DisplayActorOnCardHint": "Zeige das Bild/Token des Akteurs auf Kampf-Chat-Karten",
 "SETTINGS.InitiativeRule": "Wähle Regel für Initiative",
 "SETTINGS.InitiativeRuleHint": "Du kannst die Standard-Initiativeregel (GE-Wert) oder die optionale Regel (Würfel benutzen) auswählen",
 "SETTINGS.InitiativeRuleBasic": "Standard",
@@ -591,6 +598,8 @@
 "SETTINGS.OverrideSheetArtworkHint": "!!NEUSTART ERFORDERLICH!! gewäht Zugriff auf tiefergehende Einstellungsoptionen des Steckbriefs (für erfahrene Nutzer), leer lassen für Standardeinstellungen",
 "SETTINGS.ArtWorkSheetBackground": "Steckbriefhintergrund",
 "SETTINGS.ArtWorkSheetBackgroundHint": "'null' eingeben, um Hintergrund zu entfernen",
+"SETTINGS.ArtWorkOtherSheetBackground": "Anderer Steckbriefhintergrund",
+"SETTINGS.ArtWorkOtherSheetBackgroundHint": "Tippe 'null' ein, um den Hintergrund zu entfernen. Funktioniert z. Z. nur für Gegenstände und Fahrzeuge.",																													 
 "SETTINGS.ArtworkSheetImage": "Steckbriefbild",
 "SETTINGS.ArtworkSheetImageHint": "'null' eingeben, um Bild zu entfernen",
 "SETTINGS.ArtworkFrontColor": "Hauptfarbe",

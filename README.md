@@ -44,6 +44,10 @@
 
 ## Versionen
 
+version 0.56.1:
+
+* Updated to HavlockV/CoC7-FoundryVTT 0.5.6
+
 version 0.55.0:
 
 * update to newest game system version; fixed some minor translation issues; removed english localisation file
