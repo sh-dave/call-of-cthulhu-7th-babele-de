@@ -1,14 +1,34 @@
-Hooks.once('init', () => {
+const MODULE_ID = 'call-of-cthulhu-7th-babele-de';
 
-	if(typeof Babele !== 'undefined') {
+Hooks.on('init', () => {
+  game.settings.register(MODULE_ID, 'autoRegisterBabel', {
+    name: 'Automatically activate translation via Babele',
+    hint: 'Automatically implements Babele translations without needing to point to the directory containing the translations.',
+    scope: 'world',
+    config: true,
+    default: true,
+    type: Boolean,
 
-		Babele.get().register({
-			module: 'call-of-cthulhu-7th-babele-de',
-			lang: 'de',
-			dir: 'compendium'
-		});
-		
-		document.getElementById("logo").src="/modules/call-of-cthulhu-7th-babele-de/img/fvtt-anvil-de.png";
-		
-	}
+    onChange: value => {
+      if (value) {
+        autoRegisterBabel();
+      }
+
+      window.location.reload();
+    },
+  });
+
+  if (game.settings.get(MODULE_ID, 'autoRegisterBabel')) {
+    autoRegisterBabel();
+  }
 });
+
+function autoRegisterBabel() {
+  if (typeof Babele !== 'undefined') {
+    Babele.get().register({
+      module: MODULE_ID,
+      lang: 'de',
+      dir: 'compendium/de',
+    });
+  }
+}
