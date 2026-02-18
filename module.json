@@ -2,7 +2,7 @@
   "id": "call-of-cthulhu-7th-babele-de",
   "title": "Translation: Deutsch (Call of Cthulhu 7)",
   "description": "Deutsche Übersetzung von Call of Cthulhu 7th (HavlockV/CoC7-FoundryVTT) mit Babele -  Call of Cthulhu 7th (HavlockV/CoC7-FoundryVTT) german translation using Babele",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "compatibility": {
     "minimum": "12",
     "verified": "13"
@@ -39,5 +39,5 @@
   ],
   "url": "https://github.com/sh-dave/call-of-cthulhu-7th-babele-de",
   "manifest": "https://raw.githubusercontent.com/sh-dave/call-of-cthulhu-7th-babele-de/master/module.json",
-  "download": "https://raw.githubusercontent.com/sh-dave/call-of-cthulhu-7th-babele-de/releases/call-of-cthulhu-7th-babele-de-0.7.0.zip"
+  "download": "https://github.com/sh-dave/call-of-cthulhu-7th-babele-de/releases/download/0.7.1/call-of-cthulhu-7th-babele-de-0.7.1.zip"
 }
