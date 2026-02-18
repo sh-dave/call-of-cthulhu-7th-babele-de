@@ -22,14 +22,14 @@ jobs:
           echo "ZIP_FILE=$ZIP_NAME" >> $GITHUB_ENV
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add to release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.ZIP_FILE }}
         env:
