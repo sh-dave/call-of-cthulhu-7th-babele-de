@@ -2,8 +2,8 @@ name: release
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - '**'
 
 jobs:
   build:
@@ -20,11 +20,12 @@ jobs:
           ZIP_NAME="${MODULE_NAME}-${MODULE_VERSION}.zip"
           zip -r "$ZIP_NAME" . -x "*.github*" "*.git*"
           echo "ZIP_FILE=$ZIP_NAME" >> $GITHUB_ENV
+          echo "MODULE_VERSION=$MODULE_VERSION" >> $GITHUB_ENV
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ env.MODULE_VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
